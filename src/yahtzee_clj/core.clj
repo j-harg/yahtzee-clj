@@ -9,6 +9,10 @@
   "Rolls a hand of 5 six sided dice."
   (repeatedly 5 roll))
 
+(defn score-singles [hand]
+  "Scores the singles."
+  (reduce + hand))
+
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
